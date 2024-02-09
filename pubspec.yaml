@@ -1,0 +1,31 @@
+name: real_stream
+description: Fake streaming app.
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: '>=3.1.2 <4.0.0'
+
+dependencies:
+  camera: ^0.10.5+5
+  font_awesome_flutter: '>= 6.4.2'
+  flutter:
+    sdk: flutter
+  image_picker: ^1.0.4
+  shared_preferences: ^2.2.2
+  path_provider: ^2.1.1
+  path: any
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/
+  
+dependency_overrides:
+  font_awesome_flutter:
+    path: ./font_awesome_flutter
